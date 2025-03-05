@@ -7,3 +7,4 @@ C:\Users\aranz\source\repos\Aparkalekua\obj\Debug\Aparkalekua.csproj.GenerateRes
 C:\Users\aranz\source\repos\Aparkalekua\obj\Debug\Aparkalekua.csproj.CoreCompileInputs.cache
 C:\Users\aranz\source\repos\Aparkalekua\obj\Debug\Aparkalekua.exe
 C:\Users\aranz\source\repos\Aparkalekua\obj\Debug\Aparkalekua.pdb
+C:\Users\aranz\source\repos\Aparkalekua\obj\Debug\Aparkalekua.Form1.resources
