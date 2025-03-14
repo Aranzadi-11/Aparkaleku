@@ -15,5 +15,11 @@ namespace Aparkalekua
         {
             return (DateTime.Now - SarreraOrdua).TotalMinutes * 0.4 + eserlekuKop * 0.25;
         }
+
+        public int EserlekuKop
+        {
+            get { return eserlekuKop; }
+            set { eserlekuKop = value; }
+        }
     }
 }
