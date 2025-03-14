@@ -95,15 +95,10 @@ namespace Aparkalekua
             GehituIbilgailua(matrikula, mota, luzera, eserlekuKop);
         }
 
-        private void ViewVehiclesMenuItem_Click(object sender, EventArgs e)
+        private void IbilgailuaAteraButton_Click(object sender, EventArgs e)
         {
-            ibilgailuakListBox.Items.Clear();
-            foreach (var ibilgailua in ibilgailuak)
-            {
-                double ordaina = ibilgailua.KalkulatuOrdaina();
-                ibilgailuakListBox.Items.Add($"{ibilgailua.Matrikula} - {ordaina}€");
-            }
-            ibilgailuakListBox.Visible = true;
+            var form2 = new Form2(ibilgailuak);
+            form2.Show();
         }
     }
 }
