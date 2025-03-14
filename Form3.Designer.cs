@@ -8,6 +8,7 @@
         private System.Windows.Forms.Label ordainduOrduaLabel;
         private System.Windows.Forms.Label luzeraLabel;
         private System.Windows.Forms.Label eserlekuKopLabel;
+        private System.Windows.Forms.Label precioLabel; // Nueva etiqueta para el precio
         private System.Windows.Forms.Button ordainduButton;
         private System.Windows.Forms.Button itzuliButton;
 
@@ -27,6 +28,7 @@
             this.ordainduOrduaLabel = new System.Windows.Forms.Label();
             this.luzeraLabel = new System.Windows.Forms.Label();
             this.eserlekuKopLabel = new System.Windows.Forms.Label();
+            this.precioLabel = new System.Windows.Forms.Label(); // Inicialización de la nueva etiqueta
             this.ordainduButton = new System.Windows.Forms.Button();
             this.itzuliButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -78,22 +80,32 @@
             this.eserlekuKopLabel.Text = "Eserleku Kop:";
             this.eserlekuKopLabel.Visible = false;
             // 
+            // precioLabel
+            // 
+            this.precioLabel.AutoSize = true;
+            this.precioLabel.Location = new System.Drawing.Point(12, 124);
+            this.precioLabel.Name = "precioLabel";
+            this.precioLabel.Size = new System.Drawing.Size(37, 13);
+            this.precioLabel.TabIndex = 5;
+            this.precioLabel.Text = "Precio:";
+            this.precioLabel.Visible = false;
+            // 
             // ordainduButton
             // 
-            this.ordainduButton.Location = new System.Drawing.Point(15, 127);
+            this.ordainduButton.Location = new System.Drawing.Point(15, 150);
             this.ordainduButton.Name = "ordainduButton";
             this.ordainduButton.Size = new System.Drawing.Size(75, 23);
-            this.ordainduButton.TabIndex = 5;
+            this.ordainduButton.TabIndex = 6;
             this.ordainduButton.Text = "Ordaindu";
             this.ordainduButton.UseVisualStyleBackColor = true;
             this.ordainduButton.Click += new System.EventHandler(this.OrdainduButton_Click);
             // 
             // itzuliButton
             // 
-            this.itzuliButton.Location = new System.Drawing.Point(96, 127);
+            this.itzuliButton.Location = new System.Drawing.Point(96, 150);
             this.itzuliButton.Name = "itzuliButton";
             this.itzuliButton.Size = new System.Drawing.Size(75, 23);
-            this.itzuliButton.TabIndex = 6;
+            this.itzuliButton.TabIndex = 7;
             this.itzuliButton.Text = "Itzuli";
             this.itzuliButton.UseVisualStyleBackColor = true;
             this.itzuliButton.Click += new System.EventHandler(this.ItzuliButton_Click);
@@ -102,9 +114,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 162);
+            this.ClientSize = new System.Drawing.Size(284, 185);
             this.Controls.Add(this.itzuliButton);
             this.Controls.Add(this.ordainduButton);
+            this.Controls.Add(this.precioLabel); // Añadiendo la nueva etiqueta al formulario
             this.Controls.Add(this.eserlekuKopLabel);
             this.Controls.Add(this.luzeraLabel);
             this.Controls.Add(this.ordainduOrduaLabel);

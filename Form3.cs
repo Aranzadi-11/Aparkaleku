@@ -16,20 +16,25 @@ namespace Aparkalekua
 
         private void LoadVehicleDetails()
         {
-            matrikulaLabel.Text = ibilgailua.Matrikula;
-            sarreraOrduaLabel.Text = ibilgailua.SarreraOrdua.ToString();
-            ordainduOrduaLabel.Text = DateTime.Now.ToString();
+            matrikulaLabel.Text = $"Matrikula: {ibilgailua.Matrikula}";
+            sarreraOrduaLabel.Text = $"Sarrera ordua: {ibilgailua.SarreraOrdua}";
+            ordainduOrduaLabel.Text = $"Ordaindu ordua: {DateTime.Now}";
+
+            double precio = ibilgailua.KalkulatuOrdaina();
 
             if (ibilgailua is Furgoneta furgoneta)
             {
-                luzeraLabel.Text = furgoneta.Luzera.ToString();
+                luzeraLabel.Text = $"Luzera: {furgoneta.Luzera}";
                 luzeraLabel.Visible = true;
             }
             else if (ibilgailua is Autobusa autobusa)
             {
-                eserlekuKopLabel.Text = autobusa.EserlekuKop.ToString();
+                eserlekuKopLabel.Text = $"Eserleku kopurua: {autobusa.EserlekuKop}";
                 eserlekuKopLabel.Visible = true;
             }
+
+            precioLabel.Text = $"Precio a pagar: {precio:0.00}€";
+            precioLabel.Visible = true;
         }
 
         private void OrdainduButton_Click(object sender, EventArgs e)
