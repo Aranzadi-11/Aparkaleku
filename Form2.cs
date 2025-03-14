@@ -30,7 +30,9 @@ namespace Aparkalekua
             {
                 var selectedVehicle = ibilgailuak.Find(v => v.Matrikula == vehiclesListBox.SelectedItem.ToString());
                 var form3 = new Form3(selectedVehicle);
+                form3.FormClosed += (s, args) => this.Close(); // Cierra este formulario cuando el nuevo se cierre
                 form3.Show();
+                this.Hide(); // Oculta este formulario
             }
             else
             {
