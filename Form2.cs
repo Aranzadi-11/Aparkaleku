@@ -42,7 +42,9 @@ namespace Aparkalekua
 
         private void IbilgailuaSartuButton_Click(object sender, EventArgs e)
         {
-            this.Close();
+            var form1 = new Form1();
+            form1.Show();
+            this.Close(); // Cierra Form2 al volver a Form1
         }
     }
 }

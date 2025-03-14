@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace Aparkalekua
@@ -45,7 +46,9 @@ namespace Aparkalekua
 
         private void ItzuliButton_Click(object sender, EventArgs e)
         {
-            this.Close();
+            var form2 = new Form2(new List<Ibilgailua>()); // Pasa la lista adecuada aquí
+            form2.Show();
+            this.Close(); // Cierra Form3 al volver a Form2
         }
     }
 }

@@ -99,6 +99,7 @@ namespace Aparkalekua
         {
             var form2 = new Form2(ibilgailuak);
             form2.Show();
+            this.Hide(); // Oculta Form1 al abrir Form2
         }
     }
 }
